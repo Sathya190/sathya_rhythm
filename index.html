@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
 
     <meta charset="UTF-8">
@@ -14,6 +15,221 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+    // ================= PAGE LOAD EVENT =================
+
+    console.log("Sathya Rhythm Dance Academy Website Loaded");
+
+
+    setTimeout(function () {
+
+        alert("Welcome to Sathya Rhythm Dance Academy 💃");
+
+    }, 1000);
+
+
+
+
+
+    // ================= JOIN NOW BUTTON EVENT =================
+
+    let joinButton = document.querySelector(".btn-warning");
+
+
+    if (joinButton) {
+
+        joinButton.addEventListener("click", function (event) {
+
+
+            let confirmJoin = confirm(
+                "Do you want to join Sathya Rhythm Dance Academy?"
+            );
+
+
+            if (confirmJoin) {
+
+                alert(
+                    "Great! Redirecting to Registration Page."
+                );
+
+            }
+
+            else {
+
+                event.preventDefault();
+
+            }
+
+
+        });
+
+    }
+
+
+
+
+
+
+
+    // ================= NAVBAR SCROLL EVENT =================
+
+
+    let navbar = document.querySelector(".navbar");
+
+
+    window.addEventListener("scroll", function () {
+
+
+        if (window.scrollY > 100) {
+
+
+            navbar.classList.remove("bg-dark");
+
+            navbar.classList.add("bg-danger");
+
+
+        }
+
+        else {
+
+
+            navbar.classList.remove("bg-danger");
+
+            navbar.classList.add("bg-dark");
+
+
+        }
+
+
+    });
+
+
+
+
+
+
+
+    // ================= DANCE CARD HOVER EVENT =================
+
+
+    let cards = document.querySelectorAll(".card");
+
+
+    cards.forEach(function (card) {
+
+
+        card.addEventListener("mouseover", function () {
+
+
+            card.style.transform = "translateY(-10px)";
+
+            card.style.transition = "0.4s";
+
+            card.style.boxShadow =
+                "0 10px 20px rgba(0,0,0,0.3)";
+
+
+        });
+
+
+
+        card.addEventListener("mouseout", function () {
+
+
+            card.style.transform = "translateY(0px)";
+
+            card.style.boxShadow =
+                "0 5px 10px rgba(0,0,0,0.1)";
+
+
+        });
+
+
+    });
+
+
+
+
+
+
+
+    // ================= GALLERY IMAGE CLICK EVENT =================
+
+
+    let galleryImages = document.querySelectorAll(
+        ".container img"
+    );
+
+
+    galleryImages.forEach(function (image) {
+
+
+        image.addEventListener("click", function () {
+
+
+            image.style.transform = "scale(1.1)";
+
+            image.style.transition = "0.5s";
+
+
+
+            setTimeout(function () {
+
+
+                image.style.transform = "scale(1)";
+
+
+            }, 500);
+
+
+        });
+
+
+    });
+
+
+
+
+
+
+
+    // ================= BUTTON HOVER EVENT =================
+
+
+    let buttons = document.querySelectorAll("a");
+
+
+    buttons.forEach(function (button) {
+
+
+        button.addEventListener("mouseover", function () {
+
+
+            button.style.opacity = "0.8";
+
+
+        });
+
+
+
+        button.addEventListener("mouseout", function () {
+
+
+            button.style.opacity = "1";
+
+
+        });
+
+
+    });
+
+
+
+});
+    </script>
 <body>
 
 <!-- ================= NAVBAR ================= -->
