@@ -1,304 +1,493 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us - Sathya Rhythm Dance Academy</title>
+<title>Contact Us - Sathya Rhythm Dance Academy</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
+
+<!-- NAVBAR -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-    <div class="container">
+<div class="container">
 
-        <a class="navbar-brand fw-bold" href="home.html">
-            💃 Sathya Rhythm Dance Academy
-        </a>
+<a class="navbar-brand fw-bold" href="home.html">
+💃 Sathya Rhythm Dance Academy
+</a>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar">
 
-            <span class="navbar-toggler-icon"></span>
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
 
-        </button>
+<span class="navbar-toggler-icon"></span>
 
-        <div class="collapse navbar-collapse" id="navbar">
+</button>
 
-            <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
+<div class="collapse navbar-collapse" id="navbar">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+<ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="classes.html">Classes</a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="home.html">Home</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="trainers.html">Trainers</a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="classes.html">Classes</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="trainers.html">Trainers</a>
+</li>
 
-            </ul>
+<li class="nav-item">
+<a class="nav-link" href="gallery.html">Gallery</a>
+</li>
 
-        </div>
+<li class="nav-item">
+<a class="nav-link active" href="contact.html">Contact</a>
+</li>
 
-    </div>
+</ul>
+
+</div>
+
+</div>
 
 </nav>
 
-<!-- ================= HERO ================= -->
+
+
+<!-- HERO -->
 
 <section class="bg-dark text-white text-center py-5">
 
-    <div class="container">
+<div class="container">
 
-        <h1 class="display-4 fw-bold">
-            Contact Us
-        </h1>
+<h1 class="display-4 fw-bold">
+Contact Us
+</h1>
 
-        <p class="lead">
-            We'd love to hear from you.
-        </p>
+<p class="lead">
+We'd love to hear from you.
+</p>
 
-    </div>
+</div>
 
 </section>
 
-<!-- ================= CONTACT SECTION ================= -->
+
+
+
+<!-- CONTACT SECTION -->
 
 <section class="container py-5">
 
-    <div class="row">
 
-        <!-- Contact Form -->
+<div class="row">
 
-        <div class="col-lg-7">
 
-            <div class="card shadow">
+<div class="col-lg-7">
 
-                <div class="card-body">
 
-                    <h3 class="mb-4">
-                        Send us a Message
-                    </h3>
+<div class="card shadow">
 
-                    <form>
 
-                        <div class="mb-3">
+<div class="card-body">
 
-                            <label class="form-label">
-                                Full Name
-                            </label>
 
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Enter your name"
-                                required>
+<h3 class="mb-4">
+Send us a Message
+</h3>
 
-                        </div>
 
-                        <div class="mb-3">
 
-                            <label class="form-label">
-                                Email Address
-                            </label>
+<form id="contactForm">
 
-                            <input
-                                type="email"
-                                class="form-control"
-                                placeholder="Enter your email"
-                                required>
 
-                        </div>
 
-                        <div class="mb-3">
+<div class="mb-3">
 
-                            <label class="form-label">
-                                Phone Number
-                            </label>
+<label class="form-label">
+Full Name
+</label>
 
-                            <input
-                                type="tel"
-                                class="form-control"
-                                placeholder="Enter your phone number">
+<input
+type="text"
+id="name"
+class="form-control"
+placeholder="Enter your name">
 
-                        </div>
+</div>
 
-                        <div class="mb-3">
 
-                            <label class="form-label">
-                                Dance Class
-                            </label>
 
-                            <select class="form-select">
 
-                                <option>Select Class</option>
+<div class="mb-3">
 
-                                <option>Bharatanatyam</option>
+<label class="form-label">
+Email Address
+</label>
 
-                                <option>Western Dance</option>
+<input
+type="email"
+id="email"
+class="form-control"
+placeholder="Enter your email">
 
-                                <option>Hip Hop</option>
+</div>
 
-                                <option>Folk Dance</option>
 
-                            </select>
 
-                        </div>
 
-                        <div class="mb-3">
+<div class="mb-3">
 
-                            <label class="form-label">
-                                Message
-                            </label>
+<label class="form-label">
+Phone Number
+</label>
 
-                            <textarea
-                                class="form-control"
-                                rows="5"
-                                placeholder="Type your message"></textarea>
+<input
+type="tel"
+id="phone"
+class="form-control"
+placeholder="Enter your phone number">
 
-                        </div>
+</div>
 
-                        <button class="btn btn-danger">
-                            Send Message
-                        </button>
 
-                    </form>
 
-                </div>
 
-            </div>
+<div class="mb-3">
 
-        </div>
+<label class="form-label">
+Dance Class
+</label>
 
-        <div class="col-lg-5 mt-4 mt-lg-0">
 
-            <div class="card shadow">
+<select class="form-select" id="danceClass">
 
-                <div class="card-body">
 
-                    <h3 class="mb-4">
-                        Contact Information
-                    </h3>
+<option>Select Class</option>
 
-                    <p>
-                        <strong>🏫 Academy</strong><br>
-                        Sathya Rhythm Dance Academy
-                    </p>
+<option>Bharatanatyam</option>
 
-                    <hr>
+<option>Western Dance</option>
 
-                    <p>
-                        <strong>📍 Address</strong><br>
-                        No. 25, Anna Nagar,<br>
-                        Madurai, Tamil Nadu
-                    </p>
+<option>Hip Hop</option>
 
-                    <hr>
+<option>Folk Dance</option>
 
-                    <p>
-                        <strong>📞 Phone</strong><br>
-                        +91 9876543210
-                    </p>
 
-                    <hr>
+</select>
 
-                    <p>
-                        <strong>✉ Email</strong><br>
-                        rhythm@gmail.com
-                    </p>
 
-                    <hr>
+</div>
 
-                    <p>
-                        <strong>🕒 Working Hours</strong><br>
-                        Monday - Saturday<br>
-                        9:00 AM – 8:00 PM
-                    </p>
 
-                </div>
 
-            </div>
 
-        </div>
+<div class="mb-3">
 
-    </div>
+<label class="form-label">
+Message
+</label>
+
+
+<textarea
+id="message"
+class="form-control"
+rows="5"
+placeholder="Type your message"></textarea>
+
+
+</div>
+
+
+
+
+<button class="btn btn-danger">
+Send Message
+</button>
+
+
+
+</form>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-lg-5 mt-4 mt-lg-0">
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<h3 class="mb-4">
+Contact Information
+</h3>
+
+
+
+<p>
+<strong>🏫 Academy</strong><br>
+Sathya Rhythm Dance Academy
+</p>
+
+
+<hr>
+
+
+<p>
+<strong>📍 Address</strong><br>
+No.25, Anna Nagar,<br>
+Madurai, Tamil Nadu
+</p>
+
+
+<hr>
+
+
+<p>
+<strong>📞 Phone</strong><br>
++91 9876543210
+</p>
+
+
+<hr>
+
+
+<p>
+<strong>✉ Email</strong><br>
+rhythm@gmail.com
+</p>
+
+
+<hr>
+
+
+<p>
+<strong>🕒 Working Hours</strong><br>
+Monday - Saturday<br>
+9:00 AM - 8:00 PM
+</p>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
+
+
+
+
+<!-- MAP -->
 
 <section class="container pb-5">
 
-    <div class="card shadow">
+<div class="card shadow">
 
-        <div class="card-body">
+<div class="card-body">
 
-            <h3 class="text-center mb-4">
-                Our Location
-            </h3>
 
-            <iframe
-                src="https://www.google.com/maps?q=Madurai&output=embed"
-                width="100%"
-                height="350"
-                style="border:0;"
-                loading="lazy">
-            </iframe>
+<h3 class="text-center mb-4">
+Our Location
+</h3>
 
-        </div>
 
-    </div>
+<iframe
+src="https://www.google.com/maps?q=Madurai&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+
+</iframe>
+
+
+</div>
+
+</div>
 
 </section>
 
 
+
+
+
+<!-- FOOTER -->
+
 <footer class="bg-dark text-white text-center p-4">
 
-    <h4>
-        Sathya Rhythm Dance Academy
-    </h4>
 
-    <p>📞 +91 9876543210</p>
+<h4>
+Sathya Rhythm Dance Academy
+</h4>
 
-    <p>✉ rhythm@gmail.com</p>
 
-    <p class="mb-0">
-        © 2026 All Rights Reserved
-    </p>
+<p>
+📞 +91 9876543210
+</p>
+
+
+<p>
+✉ rhythm@gmail.com
+</p>
+
+
+<p class="mb-0">
+© 2026 All Rights Reserved
+</p>
+
 
 </footer>
 
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+
+
+<script>
+
+
+const form = document.getElementById("contactForm");
+
+
+
+form.addEventListener("submit", function(event){
+
+
+event.preventDefault();
+
+
+
+let name = document.getElementById("name").value.trim();
+
+let email = document.getElementById("email").value.trim();
+
+let phone = document.getElementById("phone").value.trim();
+
+let danceClass = document.getElementById("danceClass").value;
+
+let message = document.getElementById("message").value.trim();
+
+
+
+
+// Regular Expressions
+
+
+let nameRegex = /^[A-Za-z ]{3,}$/;
+
+
+let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+let phoneRegex = /^[6-9][0-9]{9}$/;
+
+
+
+
+
+if(!nameRegex.test(name))
+{
+alert("Enter valid name");
+return;
+}
+
+
+
+if(!emailRegex.test(email))
+{
+alert("Enter valid email");
+return;
+}
+
+
+
+if(!phoneRegex.test(phone))
+{
+alert("Enter valid 10 digit phone number");
+return;
+}
+
+
+
+if(danceClass=="Select Class")
+{
+alert("Please select dance class");
+return;
+}
+
+
+
+if(message.length < 10)
+{
+alert("Message must contain minimum 10 characters");
+return;
+}
+
+
+
+
+alert("Thank you " + name + "! Your message has been sent successfully.");
+
+
+
+form.reset();
+
+
+
+});
+
+
+</script>
+
+
+
 </body>
+
 </html>
-```
