@@ -31,6 +31,16 @@
                 data-bs-target="#navbar">
 
             <span class="navbar-toggler-icon"></span>
+            <button id="joinBtn" class="btn btn-warning">Join Now</button>
+            <button onclick="window.location.href='login.html'">
+    Join Now
+</button>
+
+<script>
+document.getElementById("joinBtn").addEventListener("click", function() {
+    window.location.href = "login.html";
+});
+</script>
 
         </button>
 
